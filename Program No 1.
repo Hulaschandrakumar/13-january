@@ -1,0 +1,40 @@
+/*  C++ Program to find Area of Rectangle using constructor  */
+
+#include <iostream>
+using namespace std;
+
+class RectArea
+{
+    private:
+        int length;
+        int breadth;
+    public:
+        RectArea (int,int);
+
+        int areaofrect ()
+        {
+            return (length * breadth);
+        }
+        int length1()
+        {
+            return length;
+        }
+
+        int breadth1()
+        {
+            return breadth;
+        }
+};
+RectArea :: RectArea(int x, int y)
+{
+    length = x;
+    breadth = y;
+}
+int main ()
+{
+    RectArea rectangle (2,2);
+    cout<<"The Length of Rectangle : "<<rectangle.length1()<<"\n";
+    cout<<"\nThe Breadth of Rectangle : "<<rectangle.breadth1()<<"\n";
+    cout << "\nThe area of rectangle is : " <<rectangle.areaofrect()<< endl;
+    return 0;
+}
