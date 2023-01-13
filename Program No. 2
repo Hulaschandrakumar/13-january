@@ -1,0 +1,24 @@
+#include<iostream>
+using namespace std;
+class programming
+{
+   
+    public:
+    string pk;
+    string name ;
+     programming(string pk)
+    {
+        name = "I love "+pk;
+    }
+    programming(){
+        name = "I love programming languages ";
+    }
+};
+int main()
+{
+        
+        programming obj = programming();
+        cout<<obj.name;
+        programming obj1 = programming("c++");
+        cout<<obj1.name;
+}
